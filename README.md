@@ -20,10 +20,21 @@ git clone https://github.com/yourusername/whatsapp-bulk-messaging.git
 cd whatsapp-bulk-messaging
 ```
 ### 2. Install dependencies
-Install the required Python packages:
-```bash
-pip install -r requirements.txt
-```
+- Windows:
+    ```powershell
+    pip install -r requirements.txt
+    ```
+- Linux:
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+    Note: pip3 might not be installed by-default in some of the Linux distros. Please install it before installing the dependencies
+    To install pip3 type:
+    ```bash
+    sudo apt-get install python3-pip   # If you are in Debian-based disto
+    sudo pacman -S python3-pip         # If you are in Arch-based distro
+    sudo dnf install python3-pip       # If you are in Fedora
+    sudo yum install python3-pip       # If you are in CentOS/RHEL
 ### 3. Prepare a CSV file
 
 Prepare a CSV file named `phone_no.cs`v with a column `phone_no` containing the phone numbers without the country code. <br>
